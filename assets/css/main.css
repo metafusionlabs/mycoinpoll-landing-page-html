@@ -698,8 +698,8 @@ text-fill-color: transparent;
 .modal-body-inner label {
 	font-size: 20px;
 	font-weight: 500;
-	line-height: 32px;
-	margin-bottom: 20px;
+	line-height: 28px;
+	margin-bottom: 12px;
 	color: #fff;
 }
 .bg-gradient-add {
@@ -782,5 +782,11 @@ text-fill-color: transparent;
     opacity: 0;
   }
 }
-
+.icon {
+	background: linear-gradient(135deg,#18f1ff,#23db51);
+}
+.icon-bar i {
+	color: #fff;
+	font-size: 30px;
+}
 
