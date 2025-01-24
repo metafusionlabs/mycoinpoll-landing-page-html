@@ -14,4 +14,12 @@ jQuery(document).ready(function ($) {
           $('header').removeClass('menu-bg-fixed');
       }
   });
+  // Hide the preloader after the page loads
+  window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    preloader.style.opacity = '0'; // Add a fade-out effect
+    setTimeout(() => {
+       preloader.style.display = 'none';
+    }, 600); // Wait for the fade-out transition
+    });
 })
