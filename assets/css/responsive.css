@@ -1,0 +1,94 @@
+@media screen and (max-width:1480px) {
+  .work-process-thumbnails img{
+    width: 70%;
+  }
+}
+@media screen and (max-width:1280px) {
+  .hero-container {
+    padding-top: 190px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width:991px) {
+  .work-process-thumbnails{
+    display: none;
+  }
+  .section-heading h2 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .section-heading h6 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .counter-item {
+    font-size: 20px;
+    min-width: 60px;
+    min-height: 60px;
+  }
+  .section-heading h4 {
+    font-size: 24px;
+  }
+  .mt-120 {
+    margin-top: 80px;
+  }
+  .modal-header-area h4 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .custom-modal {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width:767px){
+  .modal-logo img{
+    max-width:80px;
+  }
+  .modal-custom-width {
+    width: 96%;
+  }
+  .menu-bg{
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  .header-right {
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .icon-bar i {
+    color: #fff;
+    font-size: 26px;
+  }
+  .icon{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .navbar-brand{
+    max-width: 210px;
+  }
+  .navbar-brand img{
+    width:100%;
+  }
+  .section-heading h4 {
+    font-size: 20px;
+  }
+  .section-heading h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .work-process-section{
+    padding-top: 80px;
+  }
+  .section-heading h2 {
+    font-size: 36px;
+    line-height: 55px;
+  }
+  .section-heading h6 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .primary-btn {
+    font-size: 16px;
+    height:55px;
+  }
+}
