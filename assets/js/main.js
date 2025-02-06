@@ -14,12 +14,21 @@ jQuery(document).ready(function ($) {
           $('header').removeClass('menu-bg-fixed');
       }
   });
-  // Hide the preloader after the page loads
-  window.addEventListener('load', function () {
-    const preloader = document.getElementById('preloader');
-    preloader.style.opacity = '0'; // Add a fade-out effect
-    setTimeout(() => {
-       preloader.style.display = 'none';
-    }, 600); // Wait for the fade-out transition
-    });
 })
+// preloader 
+document.addEventListener('DOMContentLoaded', function () { 
+  const preloader = document.getElementById('preloader');
+  // Ensure preloader hides after 3 seconds (fallback)
+  setTimeout(() => {
+     preloader.style.opacity = '0';
+     setTimeout(() => {
+           preloader.style.display = 'none';
+     }, 500); // Allow fade-out transition
+  }, 3000);
+  window.addEventListener('load', function () {
+     preloader.style.opacity = '0';
+     setTimeout(() => {
+           preloader.style.display = 'none';
+     }, 500);
+     });
+  });

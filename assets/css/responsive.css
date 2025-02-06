@@ -63,11 +63,9 @@
     padding-left: 8px;
     padding-right: 8px;
   }
-  .navbar-brand{
-    max-width: 210px;
-  }
+ 
   .navbar-brand img{
-    width:100%;
+    width:210px;
   }
   .section-heading h4 {
     font-size: 20px;

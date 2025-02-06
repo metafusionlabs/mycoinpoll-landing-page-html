@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap');
+ 
 body {
   margin: 0;
   padding: 0;
@@ -107,7 +106,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .hero-section {
 	margin-top: -112px;
-  background:url('../images/bg/bg-1.png');
+  background:url('../images/bg/bg-1.webp');
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center center;
@@ -176,6 +175,10 @@ text-fill-color: transparent;
   overflow: hidden;
   border-radius: 25px;
   align-items: center;
+}
+.button-wrapper a img{
+  height: 29px;
+  width: 29px;
 }
 .section-heading h4{
   font-size: 28px;
@@ -330,7 +333,8 @@ text-fill-color: transparent;
   line-height:45px;
 }
 .modal-logo img{
-  max-width:90px;
+  width:90px;
+  height: auto;
 }
 .modal-close-btn{
   position: absolute;
@@ -466,7 +470,7 @@ text-fill-color: transparent;
 }
 .work-process-section{
   padding-top: 120px;
-  background-image: url('../images/bg/bg-2.png');
+  background-image: url('../images/bg/bg-2.webp');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -748,28 +752,23 @@ text-fill-color: transparent;
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  backdrop-filter: blur(15px); /* Apply blur effect */
+  backdrop-filter: blur(15px);
+  transition: opacity 0.5s ease-out; /* Smooth fade-out */
 }
-
 .ripple {
   position: relative;
   width: 80px;
   height: 80px;
 }
-
 .ripple div {
   position: absolute;
-  border: 4px solid #00d1ff; /* Bright blue ripple effect */
+  border: 4px solid #00d1ff;
   border-radius: 50%;
   animation: ripple-animation 1.5s infinite;
 }
-
-/* Inner circle delay */
 .ripple div:nth-child(2) {
   animation-delay: -0.75s;
 }
-
-/* Ripple Animation */
 @keyframes ripple-animation {
   0% {
     width: 0;
@@ -788,5 +787,12 @@ text-fill-color: transparent;
 .icon-bar i {
 	color: #fff;
 	font-size: 30px;
+}
+.navbar-toggler:focus{
+  box-shadow: 0 0 0 transparent;
+}
+.navbar-brand img,.footer-logo img{
+  width:265px;
+  height: 38px;
 }
 
