@@ -262,7 +262,7 @@ a.nav-link.dropdown-toggle i{
       transform: translateY(0); /* Back to starting position */
   }
 }
-.section-heading h2{
+.section-heading h1{
   color:#fff;
   font-weight: 800;
   font-size: 55px;
@@ -277,10 +277,12 @@ a.nav-link.dropdown-toggle i{
 .section-heading p{
   margin-top: 20px;
 }
-.section-heading h6{
+.section-heading span{
   font-size:38px;
   line-height:45px;
   color:#2682EE;
+  font-weight: 800;
+  font-family: "Oxanium", sans-serif;
 }
 .gradient-color{
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
@@ -494,9 +496,13 @@ text-fill-color: transparent;
 	border-radius: 50%;
 	border: 1px solid #6C6A7B;
 }
-.social-menu ul li a i {
-	font-size: 15px;
+.social-menu ul li a i{
+	font-size: 18px;
 	color: #E0E0E1;
+}
+.social-menu ul li a img{
+  width: 20px;
+  height: auto;
 }
 .social-menu ul{
   gap: 12px;
@@ -515,11 +521,11 @@ text-fill-color: transparent;
   color:#FFFFFFCC;
   font-size:18px;
   font-weight: 500;
-}
-.footer-description ul li a{
+  cursor: pointer;
   transition: 0.5s;
   text-transform: uppercase;
 }
+ 
 .mt-10{
   margin-top: 10px;
 }
@@ -583,9 +589,12 @@ text-fill-color: transparent;
 .ellipse-2{
   left:0%;
   top: 50%;
-  max-width:350px;
+  max-width:250px;
   height:280px;
   transform: translateY(-50%);
+}
+.about-section{
+  overflow-x: hidden;
 }
 .about-thumbnails{
   padding: 25px;
