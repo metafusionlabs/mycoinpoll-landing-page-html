@@ -15,20 +15,9 @@ jQuery(document).ready(function ($) {
       }
   });
 })
-// preloader 
-document.addEventListener('DOMContentLoaded', function () { 
-  const preloader = document.getElementById('preloader');
-  // Ensure preloader hides after 3 seconds (fallback)
-  setTimeout(() => {
-     preloader.style.opacity = '0';
-     setTimeout(() => {
-           preloader.style.display = 'none';
-     }, 500); // Allow fade-out transition
-  }, 3000);
-  window.addEventListener('load', function () {
-     preloader.style.opacity = '0';
-     setTimeout(() => {
-           preloader.style.display = 'none';
-     }, 500);
-     });
-  });
+// loader
+$(window).on("load", function () {
+  $("#preloader").fadeOut();
+  $("#preloader").delay(500).fadeOut("slow");
+  $("body").delay(500).css({ opacity:1 });
+ });
