@@ -10,7 +10,6 @@
 	width: 100%;
 	height: auto;
   }
-  
   #status {
 	width: 120px;
 	height: 120px;
@@ -28,7 +27,6 @@
     justify-content: center;
     align-content: center;
   }
-  
   #status img {
 	height:50px;
   	width: 50px;
@@ -40,7 +38,6 @@
 	  font-size: 20px;
 	  color: #132725;
   }
-  
   #status:before {
 	content: "";
 	position: absolute;
@@ -58,7 +55,6 @@
 	-webkit-animation: rotatingPlus 1s linear infinite;
 			animation: rotatingPlus 1s linear infinite;
   }
-  
   #status:after {
 	content: "";
 	position: absolute;
@@ -76,7 +72,6 @@
 	-webkit-animation: rotatingMinus 5s linear infinite;
 			animation: rotatingMinus 5s linear infinite;
   }
-
   @-webkit-keyframes rotatingPlus {
 	from {
 	  -webkit-transform: rotate(0deg);

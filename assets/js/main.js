@@ -28,13 +28,11 @@ $(window).on("load", function () {
     const updateTimer = () => {
       let timeLeft = targetDate - Date.now();
       if (timeLeft <= 0) return document.querySelector(".remain-time").innerHTML = "<span>Time's up!</span>";
-
       const values = [864e5, 36e5, 6e4, 1e3].map(unit => {
             let value = Math.floor(timeLeft / unit);
             timeLeft %= unit;
             return value;
       });
-
       document.querySelectorAll(".counter-item").forEach((el, i) => {
             el.textContent = `${values[i]}${labels[i]}`;
       });
@@ -65,7 +63,7 @@ $(window).on("load", function () {
                    link.classList.toggle("active", link.dataset.target === entry.target.id)
                 );
        }), { threshold: 0.6, rootMargin: `-${offset}px 0px 0px` });
-    sections.forEach(section => observer.observe(section));
-    // Set "About" active on load
-    document.querySelector(`.nav-link[data-target="about"]`)?.classList.add("active");
+        sections.forEach(section => observer.observe(section));
+        // Set "About" active on load
+        document.querySelector(`.nav-link[data-target="about"]`)?.classList.add("active");
        });

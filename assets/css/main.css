@@ -220,46 +220,46 @@ a.nav-link.dropdown-toggle i{
 }
 @keyframes moveTopToBottom {
   0% {
-      top:18%; /* Initial position */
+      top:18%;
   }
   50% {
-      top: 30%; /* Move downward */
+      top: 30%;
   }
   100% {
-      top:18%; /* Return to the initial position */
+      top:18%;
   }
 }
 @keyframes moveTopToBottom2 {
   0% {
-      top:50%; /* Initial position */
+      top:50%;
   }
   50% {
-      top:55%; /* Move downward */
+      top:55%;
   }
   100% {
-      top:50%; /* Return to the initial position */
+      top:50%;
   }
 }
 @keyframes card-listed {
   0% {
-      top:20%; /* Initial position */
+      top:20%;
   }
   50% {
-      top:35%; /* Move downward */
+      top:35%;
   }
   100% {
-      top:22%; /* Return to the initial position */
+      top:22%;
   }
 }
 @keyframes moveUpDown {
   0% {
-      transform: translateY(0); /* Starting position (bottom) */
+      transform: translateY(0);
   }
   50% {
-      transform: translateY(-40px); /* Move up 20px */
+      transform: translateY(-40px);
   }
   100% {
-      transform: translateY(0); /* Back to starting position */
+      transform: translateY(0);
   }
 }
 .section-heading h1{
@@ -267,6 +267,9 @@ a.nav-link.dropdown-toggle i{
   font-weight: 800;
   font-size: 55px;
   line-height:65px;
+}
+.section-heading h1 span{
+  font-size: 55px;
 }
 .section-heading h3{
   color: #fff;
@@ -319,7 +322,6 @@ text-fill-color: transparent;
 .clip-path{
   clip-path: polygon( 22px 0, 100% 0, 100% calc(100% - 22px), calc(100% - 22px) 100%, 0 100%, 0 22px );
 }
-
 .ptb60{
   padding:60px 0;
 }
@@ -525,7 +527,6 @@ text-fill-color: transparent;
   transition: 0.5s;
   text-transform: uppercase;
 }
- 
 .mt-10{
   margin-top: 10px;
 }
@@ -723,15 +724,14 @@ text-fill-color: transparent;
   color:#2682EE;
 }
 @keyframes zoom {
-  
   0% {
       transform: scale(0.9);
   }
   50% {
-      transform: scale(1); /* Zoom in */
+      transform: scale(1);
   }
   100% {
-      transform: scale(0.9); /* Zoom out */
+      transform: scale(0.9);
   }
 }
 @keyframes width-effect {
@@ -749,7 +749,6 @@ text-fill-color: transparent;
 .zoom{
   animation: zoom 10s ease-in-out infinite alternate;
 }
- 
 .icon {
 	background: linear-gradient(135deg,#18f1ff,#23db51);
 }
