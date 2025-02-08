@@ -19,8 +19,23 @@ jQuery(document).ready(function ($) {
 $(window).on("load", function () {
   $("#preloader").fadeOut();
   $("#preloader").delay(500).fadeOut("slow");
-  $("body").delay(500).css({ opacity:1 });
- });
+  $("body").delay(500).css({ opacity: 1 });
+});
+
+// Show preloader when form is submitted
+$("#myForm").on("submit", function (e) {
+  e.preventDefault(); // Prevent default form submission (remove this if you want to submit normally)
+  
+  // Position preloader inside the form
+  $(this).css("position", "relative"); 
+  $("#form-preloader").fadeIn();
+
+  // Simulate form submission delay (Remove this in actual use)
+  setTimeout(() => {
+      $("#form-preloader").fadeOut();
+      alert("Form submitted!"); // Replace with actual form submission logic
+  }, 2000);
+});
 // counter
   document.addEventListener("DOMContentLoaded", () => {
     const targetDate = new Date(Date.now() + (23 * 864e5) + (9 * 36e5) + (25 * 6e4) + (45 * 1e3));
