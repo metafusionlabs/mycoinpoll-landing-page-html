@@ -776,6 +776,19 @@ text-fill-color: transparent;
   align-items: center;
   border-radius: 8px;
 }
+.country-select .bg-border-input:after{
+  z-index: -2;
+}
+.country-select {
+	position: relative;
+	z-index: 2;
+}
+.iti {
+	width: 100%;
+}
+.iti__selected-dial-code{
+  color: white;
+}
 .status{
   height: 80px;
   width:80px;
