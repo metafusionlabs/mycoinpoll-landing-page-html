@@ -426,7 +426,7 @@ text-fill-color: transparent;
   background-size:100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  animation: width-effect 3s ease-in-out;
+  animation: width-effect 3s ease-in-out infinite;
 }
 .count-item{
   background: #05221A;
@@ -617,8 +617,14 @@ text-fill-color: transparent;
 .form-group .checkBox {
 	display: none;
 }
+.g-15{
+  gap: 15px;
+}
+.g-20{
+  gap: 20px;
+}
 .form-group .checkBox + label {
-	z-index: 3;
+	z-index: 1;
 	cursor: pointer;
 	padding-left: 40px;
 	display: block;
@@ -669,7 +675,7 @@ text-fill-color: transparent;
 .input input, .input textarea {
 	background: #0b121c;
 	position: relative;
-	z-index: 9;
+	z-index:1;
 	width: 100%;
 	font-size: 18px;
 	font-weight: 400;
@@ -735,16 +741,25 @@ text-fill-color: transparent;
   }
 }
 @keyframes width-effect {
-  
   0% {
-      width: 10%;
+    width: 0%;
   }
+ 
   100% {
-      width:100%;
+    width: 100%;
   }
 }
 .width-effect{
-  animation: width-effect 2s ease-in-out infinite alternate;
+  animation: width-effect 2s ease-in-out infinite;
+}
+#outside-click li a{
+  color:#fff;
+  font-weight:600;
+  font-size: 16px;
+  cursor: pointer;
+}
+#outside-click li a.active{
+  color:#2475DA;
 }
 .zoom{
   animation: zoom 10s ease-in-out infinite alternate;

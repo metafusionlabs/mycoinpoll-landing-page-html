@@ -35,7 +35,7 @@
        <!-- header -->
          <header class="header-area">
             <div class="container">
-               <nav class="navbar navbar-expand-md menu-bg clip-path">
+               <nav class="navbar navbar-expand-lg menu-bg clip-path">
                   <div class="container-fluid">
                      <a class="navbar-brand" href="https://mycoinpoll.com/">
                         <img src="assets/images/logo.png" alt="logo"/>
@@ -53,9 +53,15 @@
                      </span>
                      </button>
                      <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                        <ul class="navbar-nav mx-auto" id="outside-click">
+                           <li><a class="nav-link" data-target="home">Home</a></li>
+                           <li><a class="nav-link" data-target="process">Process</a></li>
+                           <li><a class="nav-link active" data-target="ecm">Ecm</a></li>
+                        </ul>
+                         
                         <div class="header-right d-flex align-items-center">
                            <div class="button-wrapper d-flex align-items-center border-gradient">
-                              <a href="#">Claim Now <img src="assets/images/icon/launch.png" alt="icon"/></a>
+                              <a href="#" data-bs-toggle="modal" data-bs-target="#modal-btn">Claim Now <img src="assets/images/icon/launch.png" alt="icon"/></a>
                            </div>
                            <div class="button-wrapper d-flex align-items-center border-gradient">
                               <a href="#">Buy ECM  <img src="assets/images/icon/wallet.png" alt="icon"/> </a>
@@ -106,8 +112,9 @@
                               </div>
                            </div>
                         </div>
-                        <div class="d-inline-block mt-5">
+                        <div class="d-flex align-items-center g-15 mt-30 flex-wrap justify-content-center justify-content-lg-start">
                            <a href="#" class="btn-1 primary-btn">Participate Now <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a>
+                           <a href="#" class="btn-2 primary-btn">Buy Ecm <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                      </div>
                   </div>
@@ -168,8 +175,9 @@
                         </div>
                         <div class="col-md-12">
                            <div class="text-center">
-                              <div class="d-inline-block mt-4">
+                              <div class="d-flex align-items-center g-15 mt-30 flex-wrap justify-content-center justify-content-lg-start">
                                  <a href="#" class="btn-1 primary-btn">Claim Now <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a>
+                                 <a href="#" class="btn-2 primary-btn">Buy Ecm <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a>
                               </div>
                            </div>
                         </div>
