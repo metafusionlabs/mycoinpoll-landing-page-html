@@ -10,6 +10,10 @@
   }
 }
 @media screen and (max-width:991px) {
+  .header-right{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .work-process-thumbnails{
     display: none;
   }

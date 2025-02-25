@@ -21,7 +21,6 @@ $(window).on("load", function () {
   $("#preloader").delay(500).fadeOut("slow");
   $("body").delay(500).css({ opacity: 1 });
 });
-
 // Show preloader when form is submitted
 $("#myForm").on("submit", function (e) {
   e.preventDefault(); // Prevent default form submission (remove this if you want to submit normally)
