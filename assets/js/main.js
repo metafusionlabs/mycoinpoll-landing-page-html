@@ -28,7 +28,6 @@ $("#myForm").on("submit", function (e) {
   // Position preloader inside the form
   $(this).css("position", "relative"); 
   $("#form-preloader").fadeIn();
-
   // Simulate form submission delay (Remove this in actual use)
   setTimeout(() => {
       $("#form-preloader").fadeOut();

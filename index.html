@@ -49,8 +49,8 @@
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                         >
-                     <span class="navbar-toggler-icon">
-                     </span>
+                        <span class="navbar-toggler-icon">
+                        </span>
                      </button>
                      <div class="collapse navbar-collapse justify-content-end" id="navbarText">
                         <ul class="navbar-nav mx-auto" id="outside-click">
@@ -65,6 +65,9 @@
                            <div class="button-wrapper d-flex align-items-center border-gradient">
                               <a href="#">Buy ECM  <img src="assets/images/icon/wallet.png" alt="icon"/> </a>
                            </div>
+                           <!-- <div class="button-wrapper d-flex align-items-center border-gradient">
+                              <a href="https://t.me/ECMCOIN_bot/">Tap to Earn   <img src="assets/images/icon/tap-to-earn-icon.png" alt="icon"/> </a>
+                           </div> -->
                         </div>
                      </div>
                   </div>
@@ -111,15 +114,20 @@
                               </div>
                            </div>
                         </div>
-                        <div class="d-flex align-items-center g-15 mt-30 flex-wrap justify-content-center justify-content-lg-start">
+                        <div class="d-flex align-items-center g-15 mt-40 flex-wrap justify-content-center justify-content-lg-start">
                            <a href="#" class="btn-1 primary-btn button">Claim Now  <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a>
-                           <a href="#" class="btn-2 primary-btn">Buy Ecm <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a>
+                            <div class="button-wrapper d-flex align-items-center border-gradient">
+                              <a href="#">Buy ECM  <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a>
+                           </div>
+                           <div class="button-wrapper d-flex align-items-center border-gradient">
+                              <a href="https://t.me/ECMCOIN_bot/">Tap to Earn   <img src="assets/images/icon/tap-to-earn-icon.png" alt="icon"/> </a>
+                           </div>
                         </div>
                      </div>
                   </div>
                   <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0">
                      <div class="hero-thumbnails">
-                        <img src="assets/images/thumbnail/Win_10000_ECM_Coins.webp" alt="img" loading="lazy" class="w-100 zoom">
+                        <img src="assets/images/thumbnail/reward-coin-png-image-2.png" alt="img" loading="lazy" class="w-100 zoom">
                      </div>
                   </div>
                </div>
@@ -176,7 +184,12 @@
                            <div class="text-center">
                               <div class="d-flex align-items-center g-15 mt-30 flex-wrap justify-content-center justify-content-lg-start">
                                  <a href="#" class="btn-1 primary-btn button">Claim Now <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a>
-                                 <a href="#" class="btn-2 primary-btn">Buy Ecm <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a>
+                                 <div class="button-wrapper d-flex align-items-center border-gradient">
+                                 <a href="#">Buy ECM  <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a>
+                                 </div>
+                                 <div class="button-wrapper d-flex align-items-center border-gradient">
+                                 <a href="https://t.me/ECMCOIN_bot/">Tap to Earn   <img src="assets/images/icon/tap-to-earn-icon.png" alt="icon"/> </a>
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -188,7 +201,7 @@
          <section class="about-section mt-120 position-relative" id="ecm">
             <div class="ellipse ellipse-2"></div>
             <div class="container">
-               <div class="row align-items-center gy-4 gx-5">
+               <div class="row align-items-center gy-5 gx-5">
                   <div class="col-lg-6">
                      <div class="section-heading text-center text-lg-start">
                         <h3 class="text-shadow">What is ECM?</h3>
@@ -222,9 +235,35 @@
             </div>
          </section>
          <div class="modal-section">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-btn">
-               modal-btn
-            </button>
+            <!--start Modal -->
+            <div class="modal fade bg-gradient-add" id="modal-btn-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-custom-width">
+                  <div class="modal-content custom-modal">
+                     <div class="modal-header-area text-center">
+                              <div class="modal-logo text-center mb-4">
+                                 <a href="https://ecmcoin.com">
+                                    <img src="assets/images/icon/ecm.png" alt="img" class="zoom">
+                                 </a>
+                              </div>
+                           <h4 class="text-shadow">Join Tap To Earn and Start Earning Rewards Today!"</h4>
+                           <div class="modal-close-btn">
+                              <span data-bs-dismiss="modal" aria-label="Close">
+                                 <i class="fas fa-times"></i>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="modal-body-inner text-center">
+                           <p>Disclaimer: Winners will be announced on <span class="color-2682EE">30 January 2025</span></p>
+                        </div>
+                        <div class="d-flex justify-content-center mt-4 position-relative z-2">
+                           <div class="button-wrapper d-flex align-items-center border-gradient">
+                                 <a href="https://t.me/ECMCOIN_bot/">Tap to Earn   <img src="assets/images/icon/tap-to-earn-icon.png" alt="icon"> </a>
+                           </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end modal -->
           <!--start Modal -->
             <div class="modal fade bg-gradient-add" id="modal-btn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                <div class="modal-dialog modal-custom-width">
@@ -285,11 +324,13 @@
                                     <input type="checkbox" id="Policy1" class="checkBox" name="" value="1"> 
                                     <label for="Policy1" class="mb-0">Accept User Agreement And Privacy Policy<span><i class="fa-solid fa-check"></i></span></label> 
                                  </div>
-                                 </div>
+                              </div>
                                  <div class="mt-40">
-                                    <button class="btn-1 primary-btn w-100">Submit <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></button>
+                                    <button class="btn-1 primary-btn w-100" data-bs-toggle="modal" data-bs-target="#modal-btn-2">Submit <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></button>
                                  </div>
+                                  
                                  <p>Disclaimer: Winners will be announced on <span class="color-2682EE">30 January 2025</span></p>
+                           </div> 
                         </div>
                      </form>
                   </div>
@@ -297,7 +338,52 @@
             </div>
             <!-- end modal -->
          </div>
-        
+         <section class="partners-section mt-100">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                     <div class="section-heading text-center">
+                        <h3 class="text-shadow">Our Esteemed Partners
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="row gy-4 mt-5">
+                  <div class="col-lg-3 col-md-6">
+                     <div class="partners-items position-relative">
+                        <img src="assets/images/platform/bcoinmart.png" alt="bcoinmart" class="w-100"> 
+                        <div class="more-info">
+                           <a href="https://bcoinmart.com/">BcoinMart</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="partners-items position-relative">
+                        <img src="assets/images/platform/mycoinpoll.png" alt="mycoinpoll" class="w-100"> 
+                        <div class="more-info">
+                           <a href="https://mycoinpoll.com/">Mycoinpoll </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="partners-items position-relative">
+                        <img src="assets/images/platform/markets-tarminal.png" alt="markets-tarminal" class="w-100"> 
+                        <div class="more-info">
+                           <a href="#">Marketsterminal </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="partners-items position-relative">
+                        <img src="assets/images/platform/androverse.png" alt="androverse" class="w-100"> 
+                        <div class="more-info">
+                           <a href="https://mycoinpoll.com/androverse">Androverse </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
          <section class="info-section mt-120">
             <div class="container">
                <div class="row align-items-center gy-4">
@@ -306,9 +392,14 @@
                         <h3 class="text-shadow">Don’t Wait – Join the ECM Revolution Today!</h3>
                         <p><b><u>Market Terminal</u></b> offers a streamlined process to launch or grow your project. From <b><u>funding</u></b> to <b><u>visibility</u></b> and <b><u>seamless bridging integration</u></b>, we provide the tools you need to succeed in a fast-evolving market. Take the next step and discover how ECM can fuel your journey to success</p>
                      </div>
-                     <ul class="d-flex align-items-center mt-40 g-30 flex-wrap justify-content-center justify-content-lg-start">
+                     <ul class="d-flex align-items-center mt-40 g-15 flex-wrap justify-content-center justify-content-lg-start">
                         <li><a href="#" class="btn-1 primary-btn button">Claim Now <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a></li>
-                        <li><a href="#" class="btn-2 primary-btn">Learn More <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a></li>
+                        
+                        <li class="position-relative z-2">
+                           <div class="button-wrapper d-flex align-items-center border-gradient">
+                              <a href="#">Learn More  <span class="icon-rotate"><i class="fas fa-arrow-right"></i></span></a>
+                           </div>
+                        </li>
                      </ul>
                   </div>
                   <div class="col-lg-5 offset-md-2 col-md-8 offset-lg-0">
@@ -328,12 +419,12 @@
                   </div>
                </div>
                <div class="row gy-5 mt-5">
-                  <div class="col-lg-6 offset-md-2 col-md-8 offset-lg-0">
+                  <!-- <div class="col-lg-6 offset-md-2 col-md-8 offset-lg-0">
                      <div class="fag-thumbnails">
                         <img src="assets/images/thumbnail/What-is-ECM.webp" alt="img" loading="lazy" class="w-100 zoom">
                      </div>
-                  </div>
-                  <div class="col-lg-6">
+                  </div> -->
+                  <div class="col-lg-12">
                       <div class="frequently-answer">
                         <div class="accordion" id="accordionExample">
                            <div class="accordion-item">
@@ -404,6 +495,66 @@
             <div class="ellipse ellipse-2"></div>
             <div class="ellipse ellipse-3"></div>
             <div class="container">
+               <div class="row gy-5">
+                  <div class="col-md-5">
+                     <div class="footer-description text-center text-md-start">
+                        <div class="footer-logo">
+                           <a href="#"><img src="assets/images/logo.png" alt="icon"></a>
+                        </div>
+                        <p class="mt-20">Empowering Your Crypto Journey: Explore, Invest, and Engage with the Future of Finance!</p>
+                        <div class="social-menu mt-3">
+                           <span>Follow us</span>
+                           <ul class="d-flex align-items-center mt-2 justify-content-center justify-content-md-start">
+                              <li><a href="https://twitter.com/mycoinpoll" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                              <li><a href="https://t.me/MyCoinPolldotCom" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+                              <li><a href="https://www.youtube.com/@mycoinpollcom/featured" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                              <li><a href="https://coinmarketcap.com/community/profile/MyCoinPoll/" target="_blank"><img src="/assets/images/icon/coinmarketcap.png" alt="icon"></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="offset-lg-1 col-md-3 col-sm-6">
+                     <div class="footer-widgets text-center text-sm-start">
+                        <h4>Company</h4>
+                        <ul class="d-flex flex-column g-10 mt-20">
+                           <li><a href="https://mycoinpoll.com/">Home</a></li>
+                           <li><a href="https://mycoinpoll.com/news">News</a></li>
+                           <li><a href="https://mycoinpoll.com/terms-conditions">Terms & Conditions</a></li>
+                           <li><a href="https://mycoinpoll.com/privacy-policy">Privacy Policy </a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3 col-sm-6">
+                     <div class="footer-widgets">
+                        <div class="text-center d-flex align-items-center align-items-sm-end flex-column g-20">
+                           <div class="button-wrapper d-inline-block">
+                              <a href="#" class="button ">Claim Now <img src="assets/images/icon/launch.png" alt="icon"></a>
+                           </div>
+                           <div class="button-wrapper d-inline-block border-gradient">
+                              <a href="https://t.me/ECMCOIN_bot/">Tap to Earn   <img src="assets/images/icon/tap-to-earn-icon.png" alt="icon"/> </a>
+                           </div>
+                           <div class="button-wrapper d-inline-block border-gradient">
+                              <a href="#">Buy ECM  <img src="assets/images/icon/wallet.png" alt="icon"> </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="line-1 mt-40"></div>
+                     <p class="warning text-center mt-20">Cryptocurrency investments are highly speculative and involve significant risk. The value of crypto currencies can fluctuate widely and there is a risk of losing all of your investment. You should carefully consider your investment objectives, level of experience and risk tolerance before making any investment decisions.</p>
+                     <div class="copyright-text text-center text-white mt-40">
+                        <p>© 2025 <a href="https://mycoinpoll.com/" class="gradient-color">mycoinpool</a> All Rights Reserved.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!-- <footer class="footer-section position-relative mt-100">
+            <div class="ellipse ellipse-2"></div>
+            <div class="ellipse ellipse-3"></div>
+            <div class="container">
                <div class="row align-items-center gy-4">
                   <div class="col-lg-6">
                      <div class="footer-text text-center text-lg-start">
@@ -431,7 +582,7 @@
                         <ul class="d-flex align-items-center g-30 justify-content-center mt-30">
                            <li><a class="nav-link" data-target="home">Home</a></li>
                            <li><a class="nav-link" data-target="process">Process</a></li>
-                           <li><a class="nav-link" data-target="ecm">Ecm</a></li>
+                           <li><a class="nav-link" data-target="ecm">ECM</a></li>
                         </ul>
                         <p class="text-start font-sm mt-3"><u class="gradient-color">NB:</u> Cryptocurrency investments are highly speculative and involve significant risk. The value of crypto currencies can fluctuate widely and there is a risk of losing all of your investment. You should carefully consider your investment objectives, level of experience and risk tolerance before making any investment decisions.</p>
                      </div>
@@ -449,7 +600,7 @@
                            <li>
                               <a href="https://mycoinpoll.com/terms-conditions">Terms &amp; Conditions</a>
                            </li>
-                           <li>||</li>
+                           <li>|</li>
                            <li>
                               <a href="https://mycoinpoll.com/privacy-policy">Privacy Policy
                               </a>
@@ -460,7 +611,7 @@
                   </div>
                </div>
             </div>
-         </footer>
+         </footer>  -->
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>

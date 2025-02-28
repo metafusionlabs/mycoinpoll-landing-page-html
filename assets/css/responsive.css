@@ -43,17 +43,27 @@
   .custom-modal {
     padding: 40px 20px;
   }
+  .work-process-section{
+    padding-top: 80px;
+  }
 }
 @media screen and (max-width:767px){
+  .button-wrapper a i {
+    font-size: 18px;
+  }
+  .button-wrapper a img {
+    height: 18px;
+    width: 18px;
+  }
   .modal-logo img{
     max-width:80px;
   }
   .modal-custom-width {
     width: 96%;
   }
-  .menu-bg{
-    padding-bottom: 25px;
-    padding-top: 25px;
+  .menu-bg {
+    padding-bottom: 15px;
+    padding-top: 15px;
   }
   .header-right,#outside-click {
     justify-content: center;
@@ -78,7 +88,10 @@
     line-height: 40px;
   }
   .work-process-section{
-    padding-top: 80px;
+    padding-top:65px;
+  }
+  .hero-container {
+    padding-bottom: 60px;
   }
   .section-heading h1,.section-heading h1 span {
     font-size: 36px;
@@ -102,5 +115,12 @@
   }
   .header-right {
     gap: 12px;
+  }
+  .mt-100 {
+    margin-top: 65px;
+  }
+  #outside-click li a {
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 }

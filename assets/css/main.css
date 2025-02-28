@@ -54,7 +54,7 @@ h1,h2,h3,h4,h5,h6{
 	transition: 0.5s;
 	color: #fff;
 	display: inline-block;
-	height:60px;
+	height:56px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -121,18 +121,18 @@ h1,h2,h3,h4,h5,h6{
 .nav-item > a:hover,.nav-item > a:focus,.dropdown-menu ul li a:hover{
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
   background-clip: border-box;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .nav-link.dropdown-toggle.show{
   background: linear-gradient(90deg, #277BF5 0%, #1CD691 100.01%);
   background-clip: border-box;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .header-right{
   gap:15px;
@@ -144,7 +144,6 @@ text-fill-color: transparent;
 	from {
 		transform: translateY(15%);
 	}
-
 	to {
 		transform: translateY(0);
 	}
@@ -156,7 +155,6 @@ text-fill-color: transparent;
   font-size: 16px;
   font-weight: 500;
 }
-
 .button-wrapper {
   color:#fff;
   background-color:#121C2B;
@@ -171,19 +169,23 @@ text-fill-color: transparent;
   color:#fff;
   padding: 10px 26px;
   gap: 15px;
+  justify-content: center;
   display: flex;
   overflow: hidden;
   border-radius: 25px;
   align-items: center;
 }
+.button-wrapper a i{
+  margin-left: 0;
+}
 .button-wrapper a img{
-  height: 29px;
-  width: 29px;
+  height: 27px;
+  width: 27px;
 }
 .section-heading h4{
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
-  line-height: 35px;
+  line-height: 34px;
   color:#fff;
 }
 .button-wrapper.border-gradient::after {
@@ -196,7 +198,6 @@ text-fill-color: transparent;
   background: linear-gradient(90deg, rgba(39, 123, 245, 0.9) 0%, rgba(28, 214, 146, 0.74) 100.01%);
   filter: blur(0.02px);
   border-radius: 40px;
-  
 }
 .header-area {
 	padding-top: 35px;
@@ -210,7 +211,7 @@ a.nav-link.dropdown-toggle i{
 }
 .hero-container {
 	padding-top: 130px;
-  padding-bottom:120px;
+  padding-bottom:90px;
 }
 .mt-30{
   margin-top: 30px;
@@ -756,7 +757,6 @@ text-fill-color: transparent;
   0% {
     width: 0%;
   }
- 
   100% {
     width: 100%;
   }
@@ -769,6 +769,7 @@ text-fill-color: transparent;
   font-weight:600;
   font-size: 18px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 #outside-click li a.active{
   color:#2475DA;
@@ -883,7 +884,7 @@ text-fill-color: transparent;
 .button {
 	background-image: linear-gradient( to right, #2583EC, #248AE3, #248AE3, #20A9C1, #20A9C1, #20A9C1, #20A9C1 );
 	border-radius: 32px;
-	animation: blurr 2s infinite;
+	animation: blurr 1s infinite;
 	color: #fff !important;
 	font-size: 20px !important;
 	text-transform: uppercase;
@@ -901,7 +902,7 @@ text-fill-color: transparent;
     box-shadow: 0 0 18px #1BD294;
   }
   100% {
-    box-shadow: 0 0 8px hsl(207, 93%, 60%);
+    box-shadow: 0 0 12px hsl(207, 93%, 60%);
   }
 }
 
@@ -924,4 +925,70 @@ text-fill-color: transparent;
 }
 .terms-conditions ul li:hover a{
   color:#248EE0;
+}
+.footer-description span{
+  font-size: 15px;
+  color:gray;
+}
+.footer-widgets h4{
+  font-weight: 500;
+  font-size: 24px;
+  color:#fff;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+}
+.footer-widgets ul li a{
+  font-size: 18px;
+  font-weight: 500;
+  color:#fff;
+  transition: 0.5s;
+}
+.footer-widgets ul li a:hover{
+  color: #1cd691;
+}
+.warning{
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+}
+.partners-items{
+  outline: 5px solid #0B121D;
+  border:1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: rgba(123, 119, 143, 0.15) 0px 20px 50px 0px;
+}
+.partners-items:hover .more-info{
+  opacity: 1;
+}
+.partners-items img{
+  max-width: 120px;
+}
+.more-info {
+  transition: 0.5s;
+  opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.31);
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  border-radius: 10px;
+}
+.more-info a{
+  font-size: 18px;
+  font-weight: 600;
+  padding: 4px 8px;
+  display: inline-block;
+  background-color: #040C16;
+  color:#1cd691;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.footer-widgets .button-wrapper{
+  width: 230px;
 }
