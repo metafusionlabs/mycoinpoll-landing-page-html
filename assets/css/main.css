@@ -163,7 +163,7 @@ h1,h2,h3,h4,h5,h6{
   font-weight:600;
 }
 .button-wrapper a{
-  font-size:18px;
+  font-size:20px;
   font-weight:600;
   transition: 0.2s;
   color:#fff;
@@ -625,6 +625,7 @@ text-fill-color: transparent;
   transform: translateY(-50%);
   max-width:150px;
   height:150px;
+  z-index: -2;
 }
 /* checkbox css */
 .form-group .checkBox {
@@ -976,7 +977,7 @@ text-fill-color: transparent;
 	left: 0;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
   border-radius: 10px;
 }
 .more-info a{
