@@ -107,7 +107,11 @@ h1,h2,h2,h4,h5,h6{
 }
 .hero-section {
 	margin-top: -112px;
-  background:url('../images/bg/bg-1.webp');
+  position: relative;
+  z-index: -2;
+  /* background:url('../images/bg/bg-1.webp'); */
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), 
+  url('../images/bg/bg-1.webp');
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center center;
@@ -993,3 +997,4 @@ text-fill-color: transparent;
 .footer-widgets .button-wrapper{
   width: 230px;
 }
+
